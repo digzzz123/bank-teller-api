@@ -2,7 +2,7 @@
 ### Expected Output
 
 1. ##### User
- GET /bank-teller-api/api/user\
+ GET /bank-teller-api/api/user
  ##### Response:
  ```javascript
     {
