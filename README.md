@@ -2,16 +2,18 @@
 ### Expected Output
 
 1. ##### User
- GET /bank-teller-api/api/user
-  Response:
+ GET /bank-teller-api/api/user\
+ ##### Response:
+ ```javascript
     {
      "Name": "Mark"
      "Password": "1231231"
     }
+```
 
 1. ##### Deposit 
     PUT /bank-teller-api/api/savings/deposit
-    Response: 
+   ##### Response: 
 ```javascript
    {
     "message":"Success",
@@ -31,7 +33,7 @@
 ```   
 1. ##### Withdraw
     PUT /bank-teller-api/api/savings/deposit
-    Response: 
+ ##### Response: 
 ```javascript
    {
     "message":"Success",
@@ -52,14 +54,17 @@
 ```
 1. ##### Balance
  GET /bank-teller-api/api/user
-  Response:
+
+ ##### Response:
+ ```javascript
     {
      "Name": "Mark"
      "Balance": "20000"
     }
+```
 1. ##### Change password
  POST /bank-teller-api/api/user/password/change
-     Response: 
+##### Response: 
 ```javascript
    {
     "message":"Success",
