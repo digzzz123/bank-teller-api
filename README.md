@@ -1,22 +1,22 @@
 # bank-teller-api
 ### Expected Output
-
-1. ##### User
+1. ## User
  GET /bank-teller-api/api/user
- ##### Response:
+##### Response:
  ```javascript
     {
      "Name": "Mark"
      "Password": "1231231"
     }
 ```
-1. ##### Deposit 
+1. ## Deposit 
     PUT /bank-teller-api/api/savings/deposit
-   ##### Response: 
+##### Response: 
 ```javascript
    {
     "message":"Success",
-	status": 200,
+    "balance"="#####"
+    "status": "200",
    }
    {
    "message":"Wrong input",
@@ -31,13 +31,13 @@ NOTE : Negative inputs are invalid and will output an error.
 	"status": "400"
      }
 
-1. ##### Withdraw
+1. ## Withdraw
     PUT /bank-teller-api/api/savings/deposit   
-    ##### Response: 
+##### Response: 
 ```javascript
    {
     "message":"Success",
-	status": 200,
+	"status": "200",
    }
    {
    "message":"Wrong input",
@@ -52,17 +52,17 @@ NOTE : Negative inputs are invalid and will output an error.
 	"status": "400"
  }
 ```
-1. ##### Balance
+1. ## Balance
  GET /bank-teller-api/api/user
 
- ##### Response:
+##### Response:
  ```javascript
     {
      "Name": "Mark"
      "Balance": "20000"
     }
 ```
-1. ##### Change password
+1. ## Change password
  POST /bank-teller-api/api/user/password/change
 ##### Response: 
 ```javascript
