@@ -1,5 +1,5 @@
 # bank-teller-api
- ## Table off Contents
+ ## Table of Contents
  1. [User](#User)
  1. [Deposit](#Deposit)
  1. [Withdraw](#Withdraw)
