@@ -10,7 +10,6 @@
      "Password": "1231231"
     }
 ```
-
 1. ##### Deposit 
     PUT /bank-teller-api/api/savings/deposit
    ##### Response: 
@@ -21,19 +20,20 @@
    }
    {
    "message":"Wrong input",
-	status": 406,
+	"status": "406",
     }
-```
-    NOTE : Negative inputs are invalid and will output an error.
-```javascript    
+ ```
+NOTE : Negative inputs are invalid and will output an error.
+##### Response:
+  
     {
      "message":"Invalid Request",
 	"status": "400"
      }
-```   
+
 1. ##### Withdraw
-    PUT /bank-teller-api/api/savings/deposit
- ##### Response: 
+    PUT /bank-teller-api/api/savings/deposit   
+    ##### Response: 
 ```javascript
    {
     "message":"Success",
@@ -45,7 +45,7 @@
     }
  ```
  NOTE: Withdraw value must not exceed the current balance or it will output ERROR:400.
- Response:
+##### Response:
 ```javascript
  {
      "message":"Invalid Request",
