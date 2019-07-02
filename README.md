@@ -1,4 +1,11 @@
 # bank-teller-api
+ ## Table off Contents
+ 1. [User](#User)
+ 1. [Deposit](#Deposit)
+ 1. [Withdraw](#Withdraw)
+ 1. [Check balance](#Check-balance)
+ 1. [Change password](#Change-password)
+ 
 ### Expected Output
 ## User
  GET /bank-teller-api/api/user
@@ -50,7 +57,7 @@ NOTE : Negative inputs are invalid and will output an error.
 	"status": "400"
  }
 ```
-## Balance
+## Check balance
  GET /bank-teller-api/api/user
 
 ##### Response:
