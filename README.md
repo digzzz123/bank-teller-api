@@ -32,10 +32,12 @@
  ```
 NOTE : Negative inputs are invalid and will output an error.
 ##### Response:
+```Javascript
 {
      "message":"Invalid Request",
 	"status": "400"
 }
+```
 ## Withdraw
  PUT `/bank-teller-api/api/savings/deposit`   
 ##### Response: 
