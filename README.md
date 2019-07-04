@@ -5,7 +5,7 @@
  1. [Withdraw](#Withdraw)
  1. [Check balance](#Check-balance)
  1. [Change password](#Change-password)
- 	1. [Requirements](#Requirements:)
+ 	1. [Requirements](#Requirements)
  
 ### Expected Output
 ## User
