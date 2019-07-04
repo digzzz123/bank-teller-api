@@ -8,7 +8,7 @@
  
 ### Expected Output
 ## User
- GET /bank-teller-api/api/user
+ GET `/bank-teller-api/api/user`
 ##### Response:
  ```javascript
 {
@@ -17,7 +17,7 @@
 }
 ```
 ## Deposit 
-    PUT /bank-teller-api/api/savings/deposit
+   PUT  `/bank-teller-api/api/savings/deposit`
 ##### Response: 
 ```javascript
 {
@@ -37,7 +37,7 @@ NOTE : Negative inputs are invalid and will output an error.
 	"status": "400"
 }
 ## Withdraw
-    PUT /bank-teller-api/api/savings/deposit   
+ PUT `/bank-teller-api/api/savings/deposit`   
 ##### Response: 
 ```javascript
 {
@@ -58,7 +58,7 @@ NOTE : Negative inputs are invalid and will output an error.
 }
 ```
 ## Check balance
- GET /bank-teller-api/api/user
+ GET `/bank-teller-api/api/user`
 
 ##### Response:
  ```javascript
@@ -68,7 +68,7 @@ NOTE : Negative inputs are invalid and will output an error.
 }
 ```
 ## Change password
- POST /bank-teller-api/api/user/password/change
+ POST `/bank-teller-api/api/user/password/change`
  
  #### Requirements:
  - Must be 4-12 characters long.
