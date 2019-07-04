@@ -5,6 +5,7 @@
  1. [Withdraw](#Withdraw)
  1. [Check balance](#Check-balance)
  1. [Change password](#Change-password)
+ 	1. [Requirements](#Requirements:)
  
 ### Expected Output
 ## User
@@ -30,7 +31,7 @@
 	"status": "406",
 }
  ```
-NOTE : Negative inputs are invalid and will output an error.
+**NOTE:** Negative inputs are invalid and will output an error.
 ##### Response:
 ```Javascript
 {
@@ -51,7 +52,7 @@ NOTE : Negative inputs are invalid and will output an error.
 	"status": "406",
 }
  ```
- NOTE: Withdraw value must not exceed the current balance or it will output ERROR:400.
+**NOTE:** Withdraw value must not exceed the current balance or it will output ERROR:400.
 ##### Response:
 ```javascript
 {
@@ -72,7 +73,7 @@ NOTE : Negative inputs are invalid and will output an error.
 ## Change password
  POST `/bank-teller-api/api/user/password/change`
  
- #### Requirements:
+### Requirements:
  - Must be 4-12 characters long.
  
 ##### Response: 
