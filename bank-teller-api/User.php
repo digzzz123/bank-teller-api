@@ -11,13 +11,6 @@ class User {
     }
     public function getBalance(){
     	$query = "SELECT Balance FROM user WHERE ID=1";
-        $stmt= mysqli_stmt_init($conn);
-        if(!mysqli_stmt_prepare($stmt,$query)){
-            echo "Failed";
-        }
-        else{   
-            msqli_stmt_bind_param($stmt,s,$data);
-        }
     	$result = mysqli_query($this->conn,$query);
     	$row =mysqli_fetch_assoc($result);
         $jbal= $row['Balance'];
