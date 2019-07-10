@@ -1,0 +1,12 @@
+{
+    "name": "optimind/bank-teller-api",
+    "authors": [
+        {
+            "name": "Digz",
+            "email": "digzsalubon123@gmail.com"
+        }
+    ],
+    "require": {
+        "alrik11es/cowsayphp": "^1.2"
+    }
+}

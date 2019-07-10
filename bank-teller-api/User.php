@@ -11,14 +11,17 @@ class User {
     }
     public function getBalance(){
     	$query = "SELECT Balance FROM user WHERE ID=1";
-
+        $stmt= mysqli_stmt_init($conn);
+        if(!mysqli_stmt_prepare($stmt,$query)){
+            echo "Failed";
+        }
+        else{   
+            msqli_stmt_bind_param($stmt,s,$data);
+        }
     	$result = mysqli_query($this->conn,$query);
-    	$jbal= array();
-    	while($row =mysqli_fetch_assoc($result))
-    	{
-    		$jbal[]=$row;
-    	}
-    	return $jbal;
+    	$row =mysqli_fetch_assoc($result);
+        $jbal= $row['Balance'];
+        return $jbal;
     	
     }
     public function getUser(){
@@ -75,7 +78,7 @@ class User {
         $result = mysqli_query($this->conn,$query1);
         $row = mysqli_fetch_assoc($result);
          $arr=[ (object)["message"=>"Must not be the same value!","status"=>"406 error"],
-                (object)["message"=>"Must fill the field!","status"=>"406 error"],
+                (object)["message"=>"Must fill the field.","status"=>"406 error"],
                 (object)["message"=>"Password must only be 4-12 character long.","status"=>"406 error"]
 
             ];
@@ -105,8 +108,6 @@ class User {
     
 }
 $user = new User($conn);
-
-
 
 
 

@@ -1,9 +1,9 @@
 <?php
-$php	= "localhost";
+$server	= "localhost";
 $username ="root";
 $password ="";
 $dbname ="bank-teller";
-$conn = new mysqli($php,$username,$password,$dbname);
+$conn = new mysqli($server,$username,$password,$dbname);
 
 
 /*$query ="SELECT * FROM `user` WHERE 1";
